@@ -33,7 +33,8 @@ const Projects = () => {
 ];
 
     return (
-        <div className='project-section'>
+        <div className='project-section' id="projects">
+            <Typography variant="h4" sx={{pb: 3, textAlign: 'center'}}> Projects  </Typography>
             {
                 data.map(dt => (
                     <div className="projects">

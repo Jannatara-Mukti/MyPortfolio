@@ -1,34 +1,37 @@
 @import "../../global.scss";
 
 .about{
-    display: flex;
     background-color: #fff;
     color: $mainColor;
-    padding: 60px;
+    padding: 20px 0px 40px 40px;
 
-    .description{
-        flex: 0.5;
-        p{
-            font-size: 15px;
-            font-weight: 400;
-            text-align: justify;
-            line-height: 1.5;
+    .about-content{
+
+        display: flex;
+        .description{
+            flex: 0.5;
+            p{
+                font-size: 15px;
+                font-weight: 400;
+                text-align: justify;
+                line-height: 1.5;
+            }
+            .basic{
+                margin-top: 20px;
+            }
+            .info{
+                margin: 10px 0;
+                display: flex;
+                font-size: 12px;
+                justify-content: space-between;
+            }
         }
-        .basic{
-            margin-top: 20px;
-        }
-        .info{
-            margin: 10px 0;
-            display: flex;
-            font-size: 12px;
-            justify-content: space-between;
-        }
-    }
-    .skills{
-        flex: 0.5;
-        margin-left: 40px;
-        .skill-title{
-            margin-bottom: 20px;
+        .skills{
+            flex: 0.5;
+            margin-left: 40px;
+            .skill-title{
+                margin-bottom: 20px;
+            }
         }
     }
 }

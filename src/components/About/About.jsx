@@ -6,7 +6,9 @@ import { Typography } from '@mui/material';
 
 const About = () => {
     return (
-        <div className='about'> 
+        <div className='about' id="about"> 
+            <Typography variant="h4" sx={{pb: 3, textAlign:'center'}}> About Me  </Typography>
+            <div className='about-content'>
             <div className="description">
                 <p>Hello, This is Jannatara Mukti. I am in the web development field for the last 2 years. I have created a lot of projects using MERN Stack technologies. When I started I knew nothing and it was a difficult decision for me to decide on what technology to specialize in. During my graduation, I touched everything a bit, but I didn't know much about anything. After evaluating some technologies, I finally decided to develop with MERN Stack. And now I love MERN. Finally, I am enjoying my work.</p>
                 <p className='basic'>Basic Info:</p>
@@ -40,6 +42,7 @@ const About = () => {
                 <Typography>Mongodb</Typography>
                 <Slider defaultValue={60} aria-label="Default" valueLabelDisplay="on" />
             </Box>
+            </div>
             </div>
         </div>
     );

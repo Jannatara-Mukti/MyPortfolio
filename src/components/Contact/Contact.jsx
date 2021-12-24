@@ -1,4 +1,4 @@
-import { Button, TextField } from '@mui/material';
+import { Button, TextField, Typography } from '@mui/material';
 import { Box } from '@mui/system';
 import React, { useRef } from 'react';
 import emailjs from 'emailjs-com';
@@ -30,7 +30,9 @@ const Contact = () => {
     };
 
     return (
-        <Box style={ContactBg} sx={{ flexGrow: 1, py: "60px", px: "50px",textAlign: "center"}}>
+        <div id="contact">
+            <Box style={ContactBg} sx={{ flexGrow: 1, py: "60px", px: "50px",textAlign: "center"}}>
+            <Typography variant="h4" sx={{pb: 3, textAlign: 'center', color: 'white'}}> Contact  </Typography>
             <form ref={form} onSubmit={sendEmail}>
                 <TextField id="standard-basic" label="Name" name="client-name" variant="standard" sx={{backgroundColor: 'white', width: "75%", mb: 3}} />
                 <br />
@@ -41,6 +43,7 @@ const Contact = () => {
                 <Button type="submit" sx={{width: "75%", color: 'white', borderColor: 'white'}} variant="outlined">Submit</Button>
             </form>
         </Box>
+        </div>
     );
 };
 
